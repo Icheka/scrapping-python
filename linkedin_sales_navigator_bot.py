@@ -205,7 +205,7 @@ class LinkedinBot:
         print("lentgh of df is ")
         print(len(df))
         df.info()
-        df.to_csv('/Users/xiaoxiaosu/Documents/Codes/GitHub/Python/linkedin/Scrapping/OppchainLinkedinProspect_ETI_CA_100-400M_ALL_{}.csv'.format(now_format)) 
+        df.to_csv('/Users/xiaoxiaosu/Documents/Codes/GitHub/Python/linkedin/Scrapping/OppchainLinkedinProspect_ETI_CA_100-400M_ALL_{}.csv'.format(time_insert)) 
         
         
 if __name__ == '__main__':
