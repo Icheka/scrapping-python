@@ -5,7 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import pandas as pd
 import linkedin_credentials
+from datetime import datetime
 
+
+now=datetime.now()
+time_insert=now.strftime("%Y%m%d%H%M%S")
 
 class LinkedinBot:
     def __init__(self, username, password, chromedriver, chromeOptions):
@@ -201,7 +205,7 @@ class LinkedinBot:
         print("lentgh of df is ")
         print(len(df))
         df.info()
-        df.to_csv('/Users/xiaoxiaosu/Documents/Codes/GitHub/Python/linkedin/OppchainLinkedinProspect_ETI_CA_100-400M_ALL.csv') 
+        df.to_csv('/Users/xiaoxiaosu/Documents/Codes/GitHub/Python/linkedin/Scrapping/OppchainLinkedinProspect_ETI_CA_100-400M_ALL_{}.csv'.format(now_format)) 
         
         
 if __name__ == '__main__':

@@ -1,2 +1,6 @@
 linkedin_credentials.py
 *.pyc
+__pycache__/
+*.csv
+*.xlsx
+*.xls
