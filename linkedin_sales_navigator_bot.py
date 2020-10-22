@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import pandas as pd
+import linkedin_credentials
 
 
 class LinkedinBot:
@@ -205,8 +206,8 @@ class LinkedinBot:
         
 if __name__ == '__main__':
     
-    username = 'ulrichnz@gmail.com'
-    password = 'unzk@LINKEDIN'
+    username = linkedin_credentials.username
+    password = linkedin_credentials.password
     
     chromeOptions = webdriver.ChromeOptions()
     prefs = {"download.default_directory" : "/Users/xiaoxiaosu/Documents/Codes/GitHub/Python/linkedin"}
